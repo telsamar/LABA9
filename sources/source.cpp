@@ -1,4 +1,4 @@
-Copyright [year] <Copyright Owner>
+// Copyright 2020 telsamar
 
 #include <header.hpp>
 #include <gumbo.h>
