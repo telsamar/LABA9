@@ -1,0 +1,61 @@
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/proba/LABA9/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_b2e5d\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_b2e5d.dir\build.make /nologo -L                  CMakeFiles\cmTC_b2e5d.dir\build
+Building C object CMakeFiles/cmTC_b2e5d.dir/CheckIncludeFile.c.obj
+	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\cl.exe @C:\Users\E393~1\AppData\Local\Temp\nm6306.tmp
+CheckIncludeFile.c
+C:\proba\LABA9\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1): fatal error C1083: Не удается открыть файл включение: pthread.h: No such file or directory,
+NMAKE : fatal error U1077: C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\cl.exe : тючтЁр∙хээ√щ ъюф "0x2"
+Stop.
+NMAKE : fatal error U1077: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x86\nmake.exe" : тючтЁр∙хээ√щ ъюф "0x2"
+Stop.
+
+
+
+Determining if the clock_gettime exist failed with the following output:
+Change Dir: C:/proba/LABA9/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_6c718\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_6c718.dir\build.make /nologo -L                  CMakeFiles\cmTC_6c718.dir\build
+Building CXX object CMakeFiles/cmTC_6c718.dir/CheckSymbolExists.cxx.obj
+	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\cl.exe @C:\Users\E393~1\AppData\Local\Temp\nm66B0.tmp
+cl: командная строка error D8021: недопустимый числовой аргумент "/Werror"
+NMAKE : fatal error U1077: C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\cl.exe : тючтЁр∙хээ√щ ъюф "0x2"
+Stop.
+NMAKE : fatal error U1077: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x86\nmake.exe" : тючтЁр∙хээ√щ ъюф "0x2"
+Stop.
+
+
+File C:/proba/LABA9/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <time.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef clock_gettime
+  return ((int*)(&clock_gettime))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function clock_gettime exists in the rt failed with the following output:
+Change Dir: C:/proba/LABA9/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_83978\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_83978.dir\build.make /nologo -L                  CMakeFiles\cmTC_83978.dir\build
+Building C object CMakeFiles/cmTC_83978.dir/CheckFunctionExists.c.obj
+	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\cl.exe @C:\Users\E393~1\AppData\Local\Temp\nm675C.tmp
+CheckFunctionExists.c
+Linking C executable cmTC_83978.exe
+	"C:\Program Files\JetBrains\CLion 2019.2.3\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_83978.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_83978.dir\objects1.rsp @C:\Users\E393~1\AppData\Local\Temp\nm67BA.tmp
+LINK Pass 1: command "C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1423~1.281\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_83978.dir\objects1.rsp /out:cmTC_83978.exe /implib:cmTC_83978.lib /pdb:C:\proba\LABA9\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_83978.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console rt.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_83978.dir/intermediate.manifest CMakeFiles\cmTC_83978.dir/manifest.res" failed (exit code 1104) with the following output:
+LINK : fatal error LNK1104: эх єфрхЄё  юЄъЁ√Є№ Їрщы "rt.lib"
+NMAKE : fatal error U1077: "C:\Program Files\JetBrains\CLion 2019.2.3\bin\cmake\win\bin\cmake.exe" : тючтЁр∙хээ√щ ъюф "0xffffffff"
+Stop.
+NMAKE : fatal error U1077: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x86\nmake.exe" : тючтЁр∙хээ√щ ъюф "0x2"
+Stop.
+
+
+

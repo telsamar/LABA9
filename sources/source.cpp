@@ -1,4 +1,4 @@
-// Copyright 2020 telsamar
+"Copyright [year] <Copyright Owner>
 
 #include <header.hpp>
 #include <gumbo.h>
@@ -11,13 +11,13 @@ using boost::program_options::notify;
 using boost::program_options::value;
 
 void startParse(URL& url, io_context& ioContext,
-                tp::ThreadPool<
-                tp::ThreadPoolSettings<128>
-                >& threadPool1,
-                tp::ThreadPool<
-                tp::ThreadPoolSettings<128>
-                >& threadPool2,
-                std::ofstream& outputFile);
+        tp::ThreadPool<
+        tp::ThreadPoolSettings<128>
+        >& threadPool1,
+        tp::ThreadPool<
+        tp::ThreadPoolSettings<128>
+        >& threadPool2,
+        std::ofstream& outputFile);
 
 void parseRecursively(
         void* output,
@@ -36,25 +36,25 @@ void parseRecursively(
             for (auto i = 0u; i < length; ++i) {
                 if (std::strcmp(
                         (*reinterpret_cast<
-                                GumboAttribute*
-                                >(node
-                                        .v
-                                        .element
-                                        .attributes
-                                        .data[i])).name,
+                        GumboAttribute*
+                        >(node
+                        .v
+                        .element
+                        .attributes
+                        .data[i])).name,
                         "src") != 0){
                     threadPool2.process([
-                                                &outputFile,
-                                                &node,
-                                                &i]() {
+                            &outputFile,
+                            &node,
+                            &i]() {
                         outputFile << (
                                 (*reinterpret_cast<
-                                        GumboAttribute *
-                                        >(node
-                                                .v
-                                                .element
-                                                .attributes
-                                                .data[i]))).value << '\n';
+                                GumboAttribute *
+                                >(node
+                                .v
+                                .element
+                                .attributes
+                                .data[i]))).value << '\n';
                     });
                     break;
                 }
@@ -64,25 +64,25 @@ void parseRecursively(
             for (auto i = 0u; i < length; ++i) {
                 if (std::strcmp(
                         (*reinterpret_cast<
-                                GumboAttribute*
-                                >(node
-                                        .v
-                                        .element
-                                        .attributes
-                                        .data[i])).name,
+                        GumboAttribute*
+                        >(node
+                        .v
+                        .element
+                        .attributes
+                        .data[i])).name,
                         "href") != 0){
                     URL url((*reinterpret_cast<
-                            GumboAttribute*
-                            >(node
-                                    .v
-                                    .element
-                                    .attributes
-                                    .data[i])).value);
+                    GumboAttribute*
+                    >(node
+                    .v
+                    .element
+                    .attributes
+                    .data[i])).value);
                     startParse(url,
-                               ioContext,
-                               threadPool1,
-                               threadPool2,
-                               outputFile);
+                            ioContext,
+                            threadPool1,
+                            threadPool2,
+                            outputFile);
                     break;
                 }
             }
@@ -99,13 +99,13 @@ void parseRecursively(
     }
 }
 void startParse(URL& url, io_context& ioContext,
-                tp::ThreadPool<
-                tp::ThreadPoolSettings<128>
-                >& threadPool1,
-                tp::ThreadPool<
-                tp::ThreadPoolSettings<128>
-                >& threadPool2,
-                std::ofstream& outputFile){
+        tp::ThreadPool<
+        tp::ThreadPoolSettings<128>
+        >& threadPool1,
+        tp::ThreadPool<
+        tp::ThreadPoolSettings<128>
+        >& threadPool2,
+        std::ofstream& outputFile){
     tcp::resolver resolver(ioContext);
     tcp_stream stream(ioContext);
     auto const results = resolver.resolve(url.host, url.port);
@@ -124,17 +124,17 @@ void startParse(URL& url, io_context& ioContext,
     auto childrenCount = output->root->v.element.children.length;
     for (auto i = 0u; i < childrenCount; ++i) {
         threadPool1.process([
-                                    &output,
-                                    &i,
-                                    &outputFile,
-                                    &threadPool2,
-                                    &threadPool1,
-                                    &ioContext](){parseRecursively(
-                output->root->v.element.children.data[i],
-                ioContext,
-                outputFile,
-                threadPool1,
-                threadPool2);});
+                &output,
+                &i,
+                &outputFile,
+                &threadPool2,
+                &threadPool1,
+                &ioContext](){parseRecursively(
+                        output->root->v.element.children.data[i],
+                        ioContext,
+                        outputFile,
+                        threadPool1,
+                        threadPool2);});
     }
     gumbo_destroy_output(new GumboOptions, output);
     boost::beast::error_code ec;
