@@ -1,11 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.github",
-    "\\.idea",
     "\\include",
-    "\\sources"
+    "\\sources",
+    "\\tests"
   ],
-  "SelectedNode": "\\.travis.yml",
+  "SelectedNode": "\\include\\URL.hpp",
   "PreviewInSolutionExplorer": false
 }
