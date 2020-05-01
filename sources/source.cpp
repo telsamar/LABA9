@@ -1,4 +1,4 @@
-"Copyright [year] <Copyright Owner>
+Copyright [year] <Copyright Owner>
 
 #include <header.hpp>
 #include <gumbo.h>
