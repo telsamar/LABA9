@@ -11,7 +11,7 @@ set(
   CACHE STRING "Default cache server"
 )
 
-include("tools/gate/HunterGate.cmake")
+include("tools/gate/cmake/HunterGate.cmake")
 
 HunterGate(
   URL "https://github.com/cpp-pm/hunter/archive/v0.23.218.tar.gz"
@@ -27,26 +27,18 @@ string(APPEND CMAKE_CXX_FLAGS " -Wshadow -Wnon-virtual-dtor")
 
 hunter_add_package(GTest)
 find_package(GTest CONFIG REQUIRED)
-
-hunter_add_package(Boost COMPONENTS filesystem system thread program_options)
-find_package(Boost CONFIG REQUIRED filesystem system thread program_options)
-
-hunter_add_package(Beast)
-find_package(Beast CONFIG REQUIRED)
+hunter_add_package(Boost COMPONENTS filesystem program_options)
+find_package(Boost CONFIG REQUIRED filesystem program_options)
+hunter_add_package(OpenSSL)
+find_package(OpenSSL REQUIRED)
 
 hunter_add_package(gumbo)
 find_package(gumbo CONFIG REQUIRED)
-
-hunter_add_package(thread-pool-cpp)
-find_package(thread-pool-cpp CONFIG REQUIRED)
-
-find_package(Threads)
-
 # TODO: change template word to project name and delete this comment
 add_library(template STATIC
   # enum your files and delete this comment
   ${CMAKE_CURRENT_SOURCE_DIR}/sources/source.cpp
-        )
+)
 add_executable(tests
   # TODO: enum your files and delete this comment
   ${CMAKE_CURRENT_SOURCE_DIR}/tests/test.cpp
@@ -59,20 +51,9 @@ target_include_directories(template
 target_include_directories(tests 
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
-
-target_link_libraries(template
-        ${CMAKE_THREAD_LIBS_INIT}
-        Boost::thread
-        Boost::filesystem
-        Boost::system
-        Boost::program_options
-        Beast::Beast
-        gumbo::gumbo
-        thread-pool-cpp::thread-pool-cpp)
-
 # TODO: change template word to project name and delete this comment
 target_link_libraries(tests GTest::main template)
-
+target_link_libraries(template gumbo::gumbo Boost::program_options OpenSSL::SSL)
 enable_testing()
 add_test(NAME unit_tests COMMAND tests) 
 

@@ -159,8 +159,6 @@ toolchain_table = [
     Toolchain('android-ndk-r16b-api-24-arm64-v8a-clang-libcxx14', 'Unix Makefiles'),
     Toolchain('android-ndk-r16b-api-24-armeabi-v7a-neon-clang-libcxx', 'Unix Makefiles'),
     Toolchain('android-ndk-r16b-api-24-armeabi-v7a-neon-clang-libcxx14', 'Unix Makefiles'),
-    Toolchain('android-ndk-r16b-api-24-x86-clang-libcxx14', 'Unix Makefiles'),
-    Toolchain('android-ndk-r16b-api-24-x86-64-clang-libcxx14', 'Unix Makefiles'),
     Toolchain('android-ndk-r17-api-24-arm64-v8a-clang-libcxx14', 'Unix Makefiles'),
     Toolchain('android-ndk-r17-api-24-arm64-v8a-clang-libcxx11', 'Unix Makefiles'),
     Toolchain('android-ndk-r17-api-21-arm64-v8a-neon-clang-libcxx14', 'Unix Makefiles'),
@@ -186,10 +184,7 @@ toolchain_table = [
     Toolchain('raspberrypi2-cxx11', 'Unix Makefiles'),
     Toolchain('raspberrypi2-cxx11-pic', 'Unix Makefiles'),
     Toolchain('raspberrypi3-clang-cxx11', 'Unix Makefiles'),
-    Toolchain('raspberrypi3-clang-cxx14', 'Unix Makefiles'),
-    Toolchain('raspberrypi3-clang-cxx14-pic', 'Unix Makefiles'),
     Toolchain('raspberrypi3-gcc-pic-hid-sections', 'Unix Makefiles'),
-    Toolchain('raspberrypi3-cxx14', 'Unix Makefiles'),
     Toolchain('raspberrypi3-cxx11', 'Unix Makefiles')
 ]
 
@@ -513,13 +508,6 @@ if platform.system() == 'Linux':
 if platform.system() == 'Darwin':
   toolchain_table += [
       Toolchain('ios', 'Xcode'),
-      Toolchain('ios-bitcode', 'Xcode'),
-      Toolchain('ios-13-2-dep-10-0-arm64-bitcode-cxx17', 'Xcode', ios_version='13.2'),
-      Toolchain('ios-13-2-dep-9-3-arm64-bitcode', 'Xcode', ios_version='13.2'),
-      Toolchain('ios-13-0-dep-9-3-arm64', 'Xcode', ios_version='13.0'),
-      Toolchain('ios-13-0-dep-9-3-arm64-bitcode', 'Xcode', ios_version='13.0'),
-      Toolchain('ios-13-0-dep-11-0-arm64-bitcode-cxx17', 'Xcode', ios_version='13.0'),
-      Toolchain('ios-13-0-dep-10-0-arm64-bitcode-cxx17', 'Xcode', ios_version='13.0'),
       Toolchain('ios-12-3-dep-9-3-arm64', 'Xcode', ios_version='12.3'),
       Toolchain('ios-12-2-dep-9-3-arm64', 'Xcode', ios_version='12.2'),
       Toolchain('ios-12-1-dep-9-0-device-bitcode-cxx14', 'Xcode', ios_version='12.1'),
@@ -620,7 +608,6 @@ if platform.system() == 'Darwin':
       Toolchain('ios-dep-8-0-arm64-cxx11', 'Xcode'),
       Toolchain('ios-dep-8-0-arm64-armv7-hid-sections-cxx11', 'Xcode'),
       Toolchain('ios-dep-8-0-arm64-armv7-hid-sections-lto-cxx11', 'Xcode'),
-      Toolchain('ios-dep-10-0-bitcode-cxx17', 'Xcode'),
       Toolchain('ios-nocodesign', 'Xcode', nocodesign=True),
       Toolchain('ios-nocodesign-arm64', 'Xcode', ios_version='8.1', nocodesign=True),
       Toolchain('ios-nocodesign-armv7', 'Xcode', ios_version='8.1', nocodesign=True),
@@ -687,10 +674,6 @@ if platform.system() == 'Darwin':
       Toolchain('ios-nocodesign-11-4-dep-9-3-arm64', 'Xcode', ios_version='11.4', nocodesign=True),
       Toolchain('ios-nocodesign-11-4-dep-9-3-armv7', 'Xcode', ios_version='11.4', nocodesign=True),
       Toolchain('ios-nocodesign-12-1-dep-9-3-armv7', 'Xcode', ios_version='12.1', nocodesign=True),
-      Toolchain('ios-nocodesign-12-1', 'Xcode', ios_version='12.1', nocodesign=True),
-      Toolchain('ios-nocodesign-13-0-dep-9-3-arm64', 'Xcode', ios_version='13.0', nocodesign=True),
-      Toolchain('ios-nocodesign-13-2-dep-9-3-arm64', 'Xcode', ios_version='13.2', nocodesign=True),
-      Toolchain('ios-nocodesign-13-2-dep-9-3', 'Xcode', ios_version='13.2', nocodesign=True),
       Toolchain('ios-nocodesign-dep-9-0-cxx14', 'Xcode', nocodesign=True),
       Toolchain('xcode', 'Xcode'),
       Toolchain('xcode-cxx98', 'Xcode'),

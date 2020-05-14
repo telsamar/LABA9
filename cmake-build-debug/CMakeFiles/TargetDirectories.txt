@@ -1,5 +1,0 @@
-C:/proba/LABA9/cmake-build-debug/CMakeFiles/template.dir
-C:/proba/LABA9/cmake-build-debug/CMakeFiles/tests.dir
-C:/proba/LABA9/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/proba/LABA9/cmake-build-debug/CMakeFiles/test.dir
-C:/proba/LABA9/cmake-build-debug/CMakeFiles/edit_cache.dir
