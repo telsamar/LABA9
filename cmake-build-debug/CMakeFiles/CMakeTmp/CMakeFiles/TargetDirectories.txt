@@ -1,3 +1,0 @@
-C:/универ/GITHUB/LABA9/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_2b4c1.dir
-C:/универ/GITHUB/LABA9/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeFiles/edit_cache.dir
-C:/универ/GITHUB/LABA9/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeFiles/rebuild_cache.dir

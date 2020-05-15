@@ -84,7 +84,6 @@ void Crawler::search_for_links(GumboNode *node, std::vector<std::string> *v) {
       (href = gumbo_get_attribute(&node->v.element.attributes, HREF))) {
     std::string a = href->value;
     if (a.find(HTTP) == 0) {
-      //std::cout << href->value << std::endl;
       v->push_back(href->value);
     }
   }
