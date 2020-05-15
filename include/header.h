@@ -1,5 +1,4 @@
 // Copyright 2020 <telsamar>
-
 #ifndef INCLUDE_HEADER_HPP_
 #define INCLUDE_HEADER_HPP_
 

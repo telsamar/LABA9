@@ -1,6 +1,6 @@
 1 - https://github.githubassets.com/images/search-key-slash.svg
 2 - http://github.com//
-3 - https://github.githubassets.com/images/spinners/octocat-spinner-32-EAF2F5.gif
+3 - https://camo.githubusercontent.com/503b86d4764f2d3a423b85df0869dff883d79ae6/68747470733a2f2f302e67726176617461722e636f6d2f6176617461722f64306162376534346331393631636434666561656137333165643530363266323f643d68747470732533412532462532466769746875622e6769746875626173736574732e636f6d253246696d6167657325324667726176617461727325324667726176617461722d757365722d3432302e706e6726723d6726733d3634
 4 - https://github.githubassets.com/images/spinners/octocat-spinner-32.gif
 5 - https://github.githubassets.com/images/modules/site/logos/airbnb-logo.png
 6 - https://github.githubassets.com/images/modules/site/logos/sap-logo.png
@@ -36,7 +36,7 @@
 36 - https://avatars3.githubusercontent.com/u/56606363?v=4
 37 - https://events-feed.github.com/events/codeql-chill/codeql-chill.png
 38 - https://dyjpb62732.i.lithium.com/html/assets/community-forum_logo.svg?A5C4FEA9783E6CAB22DC52A44622704D
-39 - https://dyjpb62732.i.lithium.com/skins/images/21C2B96DE0CE4ECBB5C034E8141871A7/responsive_peak/images/sortable.png
+39 - https://dyjpb62732.i.lithium.com/skins/images/F1B5153E04F6F22975A6927D1A52476F/responsive_peak/images/sortable.png
 40 - https://avatars3.githubusercontent.com/u/16583?s=60&v=4
 41 - https://camo.githubusercontent.com/52221c52dc5817ce60cadea541b921c070d90230/68747470733a2f2f7472617669732d63692e6f72672f676f6f676c652f67756d626f2d7061727365722e7376673f6272616e63683d6d6173746572
 42 - https://camo.githubusercontent.com/d4144c2bba2fb2a213534ec719b652fb04674c02/68747470733a2f2f63692e6170707665796f722e636f6d2f6170692f70726f6a656374732f7374617475732f6b3578786e346278663632616f3263703f7376673d74727565

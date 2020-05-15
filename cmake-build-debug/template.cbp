@@ -44,6 +44,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/ivan/Git/lab9"/>
 					<Add directory="/home/ivan/Git/lab9/include"/>
 					<Add directory="/home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install/include"/>
 					<Add directory="/usr/include/c++/7"/>
@@ -69,6 +70,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/ivan/Git/lab9"/>
 					<Add directory="/home/ivan/Git/lab9/include"/>
 					<Add directory="/home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install/include"/>
 					<Add directory="/usr/include/c++/7"/>
@@ -94,6 +96,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/ivan/Git/lab9"/>
 					<Add directory="/home/ivan/Git/lab9/include"/>
 					<Add directory="/home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install/include"/>
 					<Add directory="/usr/include/c++/7"/>
@@ -119,6 +122,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/ivan/Git/lab9"/>
 					<Add directory="/home/ivan/Git/lab9/include"/>
 					<Add directory="/home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install/include"/>
 					<Add directory="/usr/include/c++/7"/>
@@ -144,6 +148,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/ivan/Git/lab9"/>
 					<Add directory="/home/ivan/Git/lab9/include"/>
 					<Add directory="/home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install/include"/>
 					<Add directory="/usr/include/c++/7"/>
@@ -169,6 +174,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/ivan/Git/lab9"/>
 					<Add directory="/home/ivan/Git/lab9/include"/>
 					<Add directory="/home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install/include"/>
 					<Add directory="/usr/include/c++/7"/>

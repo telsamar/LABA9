@@ -1,6 +1,6 @@
 // Copyright 2020 <telsamar>
 
-#include "header.h"
+#include "include/header.h"
 
 Crawler::Crawler(const std::string &url, unsigned depth,
                  unsigned network_threads,
@@ -31,8 +31,9 @@ void Crawler::make_link_vector(const std::string &url, unsigned depth) {
     gumbo_destroy_output(&kGumboDefaultOptions, output);
     depth++;
     std::lock_guard<std::recursive_mutex> lock(cs);
-    for (const auto &it: *tmp) {
-      if(std::find(_unique_links.begin(), _unique_links.end(), it) == _unique_links.end()) {
+    for (const auto &it : *tmp) {
+      if (std::find(_unique_links.begin(),
+                    _unique_links.end(), it) == _unique_links.end()) {
         _cond.notify_one();
         _unique_links.insert(it);
         _pars_queue.push({url, *body});
@@ -131,7 +132,8 @@ void Crawler::search_for_img(GumboNode *node, const std::string &url) {
         (*tmp) = HTTP_COLON_DSLASH + host + DSLASH + (*tmp);
       }
       std::lock_guard<std::recursive_mutex> lock(cs);
-      if(std::find(_images.begin(), _images.end(), (*tmp)) == _images.end())
+      if (std::find(_images.begin(),
+                    _images.end(), (*tmp)) == _images.end())
         _images.emplace_back((*tmp));
     }
     delete tmp;
