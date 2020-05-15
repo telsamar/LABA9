@@ -1,0 +1,42 @@
+/home/ivan/clion-2020.1.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/ivan/Git/lab9
+-- The C compiler identification is GNU 7.5.0
+-- The CXX compiler identification is GNU 7.5.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- [hunter] Calculating Toolchain-SHA1
+-- [hunter] Calculating Config-SHA1
+-- [hunter] HUNTER_ROOT: /home/ivan/.hunter
+-- [hunter] [ Hunter-ID: 9a3594a | Toolchain-ID: 9b2c9d4 | Config-ID: 48401e9 ]
+-- [hunter] GTEST_ROOT: /home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install (ver.: 1.8.0-hunter-p11)
+-- [hunter] BOOST_ROOT: /home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install (ver.: 1.70.0-p0)
+-- [hunter] BOOST_ROOT: /home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install (ver.: 1.70.0-p0)
+-- [hunter] BOOST_ROOT: /home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install (ver.: 1.70.0-p0)
+-- Boost version: 1.70.0
+-- Found the following Boost libraries:
+--   filesystem
+--   program_options
+-- [hunter] OPENSSL_ROOT: /home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install (ver.: 1.1.1c)
+-- Found OpenSSL: /home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install/lib/libssl.a;/home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install/lib/libcrypto.a;dl (found version "1.1.1c") 
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- [hunter] GUMBO_ROOT: /home/ivan/.hunter/_Base/9a3594a/9b2c9d4/48401e9/Install (ver.: 0.10.1)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ivan/Git/lab9/cmake-build-debug

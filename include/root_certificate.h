@@ -1,6 +1,4 @@
-//
-// Created by dmon on 4/25/20.
-//
+// Copyright 2020 <telsamar>
 
 #ifndef CRAWLER_ROOT_CERTIFICATE_H
 #define CRAWLER_ROOT_CERTIFICATE_H
